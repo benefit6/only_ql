@@ -6,6 +6,7 @@
 # const $ = new Env('ChatGPT获取ShareToken');
 
 import requests
+import os
 
 # 获取新的 access token
 def get_access_token(refresh_token):
