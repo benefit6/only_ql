@@ -35,7 +35,7 @@ def generate_share_token(access_token):
     return response.text
 
 # 提供 refresh token
-refresh_token = os.environ.get("chatGPT_refresh_token"):
+refresh_token = os.environ.get("chatGPT_refresh_token")
 
 # 获取并打印 access token
 access_token = get_access_token(refresh_token)
