@@ -1,3 +1,10 @@
+#!/usr/bin/python3  
+# -- coding: utf-8 --
+# @Time : 2024/5/31 23:05
+# -------------------------------
+# cron "0 0 8 1/1 * ?" script-path=xxx.py,tag=匹配cron用
+# const $ = new Env('测试Deeplx延迟');
+
 import requests
 import time
 import threading
