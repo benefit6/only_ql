@@ -109,7 +109,7 @@ def login(uname, upassword):
 def qiandao():
     headers['Referer'] = spaceurl
     #这里需要改一下：------------------------------------2022-12-15------------------------------------------------
-    ret = r.get('https://www.4ksj.com/qiandao/', headers = headers).text
+    ret = r.get('https://www.4ksj.com/qiandao.php', headers = headers).text
     time.sleep(1)
     formhash = re.findall(r'action=logout&amp;formhash=(.*?)"', ret)[0]
     print('准备签到：获取到签到页formhash: ' + formhash)
